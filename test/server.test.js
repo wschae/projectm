@@ -12,18 +12,6 @@ let should = chai.should();
 let app = require('../server');
 let hash = require('./hash');
 
-describe('loading express', function() {   
-    it('respond to /', function(done) {
-        chai.request(app)
-        .get('/')
-        .end(function(err, res) {
-            res.should.have.status(200);
-            res.text.should.contains('<title>Project M</title>');
-            done();
-        });
-    });
- });
-
 describe('GET /api/people', function() {   
     it('Should return a list of members with valid nonce', function(done) {
         chai.request(app)
