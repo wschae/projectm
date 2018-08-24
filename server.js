@@ -5,9 +5,9 @@ const port = process.env.PORT || 5000;
 
 app.use(express.static(__dirname + "/client/build"));
 
-app.get('/api/hello', (req, res) => {
+app.get('/api/people', (req, res) => {
     var people = [
-        {name: 'jwkhong', url: 'assets/jwkhong.jpg', nonce: 0},
+        {name: 'jwkhong', url: 'assets/jwkhong.jpg', nonce: 16305},
         {name: 'eyyoun', url: 'assets/eyyoun.gif', nonce: 0},
         {name: 'gla', url: 'assets/gla.gif', nonce: 0},
         {name: 'hwanjoyu', url: 'assets/hwanjoyu.gif', nonce: 0},
@@ -21,3 +21,5 @@ app.get('/api/hello', (req, res) => {
 });
 
 app.listen(port, () => console.log(`Magic happens on port ${port}`));
+
+module.exports = app;
