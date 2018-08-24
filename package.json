@@ -1,5 +1,5 @@
 {
-  "name": "projectd",
+  "name": "projectm",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,7 +12,8 @@
     "test": "mocha --exit"
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "projectm-client": "file:client"
   },
   "devDependencies": {
     "bitcoinjs-lib": "^4.0.1",
