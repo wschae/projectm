@@ -5,7 +5,9 @@ This is the course project for the following courses on [POSTECH MOOC](http://ww
 
 # Get started
 
+NOTE: You may need to install npm, yarn and nodemon:
+
 * fork or clone this repository
 * npm install
-* npm start
+* yarn dev
 * visit 'localhost:3000'
