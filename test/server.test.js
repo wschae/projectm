@@ -27,11 +27,9 @@ describe('GET /api/people', function() {
             res.body[0].should.have.property('nonce');
 
             // verify the chain of all members
-            hash.verifyHash(res.body[0], function(r) {
-                r.should.be.true;
-
-                done();
-            });
+            hash.verifyHash(res.body).should.be.true;
+            
+            done();
         });
     });
 });
