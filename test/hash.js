@@ -22,6 +22,7 @@ const computeHash = (list, index) => {
 }
 const verifyHash = (list) => {
     var hash = computeHash(list, list.length-1);
+    console.log(hash);
     return hash.startsWith(difficulty);
 }
 
