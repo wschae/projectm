@@ -18,11 +18,12 @@ const computeHash = (list, index) => {
     data = prevHash + data + name + nonce.toString();
     var hash = computeSha256(data);
 
+    console.log("* " + prevHash + "->" + name + "." + nonce.toString() + "." + hash.toString('hex'));
     return hash.toString('hex');
 }
 const verifyHash = (list) => {
     var hash = computeHash(list, list.length-1);
-    console.log(hash);
+    console.log(list[list.length-1].name +":"+hash);
     return hash.startsWith(difficulty);
 }
 
