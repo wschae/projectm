@@ -17,7 +17,7 @@ const computeHash = (list, index) => {
 
     data = prevHash + data + name + nonce.toString();
     var hash = computeSha256(data);
-
+    console.log("> "+computeSha256(name+nonce.toString()).toString('hex'));
     console.log("* " + prevHash + "->" + name + "." + nonce.toString() + "." + hash.toString('hex'));
     return hash.toString('hex');
 }
