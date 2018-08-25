@@ -7,14 +7,11 @@ app.use(express.static(__dirname + "/client/build"));
 
 app.get('/api/people', (req, res) => {
     var people = [
-        {name: 'jwkhong', url: 'assets/jwkhong.jpg', nonce: 16305},
-        {name: 'eyyoun', url: 'assets/eyyoun.gif', nonce: 0},
-        {name: 'gla', url: 'assets/gla.gif', nonce: 0},
-        {name: 'hwanjoyu', url: 'assets/hwanjoyu.gif', nonce: 0},
-        {name: 'hyelee', url: 'assets/hyelee.jpg', nonce: 0},
-        {name: 'jinhyoukim', url: 'assets/jinhyoukim.png'},
-        {name: 'slee', url: 'assets/slee.jpg'},
-        {name: 'wschae', url: 'assets/wschae.jpg', nonce: 0},
+        {name: 'jwkhong', url: 'assets/jwkhong.jpg', nonce: 5076},
+        {name: 'eyyoun', url: 'assets/eyyoun.gif', nonce: 40764},
+        {name: 'hwanjoyu', url: 'assets/hwanjoyu.gif', nonce: 14418},
+        {name: 'hyelee', url: 'assets/hyelee.jpg', nonce: 26529},
+        {name: 'wschae', url: 'assets/wschae.jpg', nonce: 18776},
     ];
 
   res.json(people);
