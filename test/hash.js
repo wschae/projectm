@@ -14,7 +14,7 @@ const computeHash = (list, index) => {
     var prevHash = computeHash(list, index-1);    
     var image = fs.readFileSync(path+list[index].url).toString('hex');
     var name = list[index].name;
-    var nonce = list[index].nonce.toString();
+    var nonce = list[index].nonce;
 
     data = prevHash + image + name + nonce;
     var hash = computeSha256(data);
