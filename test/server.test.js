@@ -21,7 +21,7 @@ describe('GET /api/people', function() {
             res.should.have.status(200);
             res.type.should.equal('application/json');
             res.body.should.be.a('array');
-
+            
             res.body[0].should.have.property('name');
             res.body[0].should.have.property('url');
             res.body[0].should.have.property('nonce');

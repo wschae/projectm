@@ -11,14 +11,14 @@ const computeHash = (list, index) => {
         return "";
     }
 
-    var prevHash = computeHash(list, index-1);    
+    var prevHash = computeHash(list, index-1);
     var image = fs.readFileSync(path+list[index].url).toString('hex');
     var name = list[index].name;
     var nonce = list[index].nonce;
 
     data = prevHash + image + name + nonce;
     var hash = computeSha256(data);
-   
+
     return hash.toString('hex');
 }
 const verifyHash = (list) => {
