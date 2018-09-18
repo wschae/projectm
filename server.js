@@ -13,7 +13,8 @@ app.get('/api/people', (req, res) => {
         {name: 'hyelee', url: 'assets/hyelee.jpg', nonce: '46326056'},
         {name: 'wschae', url: 'assets/wschae.jpg', nonce: '354861675'},
         {name: 'kyungchan', url: 'assets/kyungchan.jpg', nonce: '359310174'},
-        {name: 'swkim', url: 'assets/swkim.jpg', nonce: '244859547'}
+        {name: 'swkim', url: 'assets/swkim.jpg', nonce: '244859547'},
+        {name: 'jskim', url: 'assets/jskim.jpg', nonce: '41698321'}
     ];
 
   res.json(people);
