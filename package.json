@@ -14,12 +14,12 @@
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "dependencies": {
+    "bitcoinjs-lib": "^4.0.1",
     "express": "^4.16.2",
     "projectm-client": "file:client",
     "simple-flexbox": "^1.2.0"
   },
   "devDependencies": {
-    "bitcoinjs-lib": "^4.0.1",
     "chai": "^4.1.2",
     "chai-http": "^4.0.0",
     "concurrently": "^3.5.0",
