@@ -29,7 +29,7 @@ const Balance = (props) => {
         <font style={{color:"white"}}> BTC. You will get </font>
         <font style={{color:"yellow", fontWeight: "bold"}}> {props.reward} </font>
         <font style={{color:"white"}}>
-          BTC. If you don't spent this coins, they'll be reclaimed in a few days, so others can use them.
+          BTC. If you don't spend this coins, they'll be reclaimed in a few days, so others can use them.
         </font>
       </div>
     </Row>

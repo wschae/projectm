@@ -46,7 +46,7 @@ const Output = (props) => {
 
     <Row style={{width: 800, maxWidth:800, display:'inline-block', wordBreak: 'break-all', textAlign:'left'}}>
       <font style={{color:"white"}}>
-        If you don't spent this coins, they'll be reclaimed in a few days, so others can use them. 
+        If you don't spend this coins, they'll be reclaimed in a few days, so others can use them. 
       </font>
     </Row>
   </Column>
