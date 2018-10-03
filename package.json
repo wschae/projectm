@@ -15,7 +15,8 @@
   },
   "dependencies": {
     "express": "^4.16.2",
-    "projectm-client": "file:client"
+    "projectm-client": "file:client",
+    "simple-flexbox": "^1.2.0"
   },
   "devDependencies": {
     "bitcoinjs-lib": "^4.0.1",

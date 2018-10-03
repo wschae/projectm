@@ -1,4 +1,5 @@
 const express = require('express');
+const faucet = require('./faucet');
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -18,6 +19,14 @@ app.get('/api/people', (req, res) => {
     ];
 
   res.json(people);
+});
+
+app.get('/api/faucet/:key', (req, res) => {
+  faucet.mktx_P2SH(req.params.key, (v) => res.json(v));
+});
+
+app.get('/api/balance', (req, res) => {
+  faucet.getBalance((v) => res.json(v));
 });
 
 app.listen(port, () => console.log(`Magic happens on port ${port}`));

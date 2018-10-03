@@ -7,6 +7,7 @@ class NavBar extends Component {
         <nav className="navbar navbar-expand-lg navbar-light" style={{float: "right", marginRight: "98px"}}> 
             <Link className="navbar-brand" to="/" style={{color: "white"}}>Home</Link>
             <Link className="navbar-brand" to="/team" style={{color: "white"}}>Team</Link>
+            <Link className="navbar-brand" to="/faucet" style={{color: "white"}}>Faucet</Link>            
         </nav>              
     )
   }
