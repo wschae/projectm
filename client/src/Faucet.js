@@ -60,7 +60,7 @@ class Faucet extends Component {
           
           <div className="App-intro">
             <Column flexGrow={1}>
-              <Title />>
+              <Title />
               <br />
 
               <Balance  

@@ -17,6 +17,7 @@
     "bitcoinjs-lib": "^4.0.1",
     "express": "^4.16.2",
     "projectm-client": "file:client",
+    "react-loading": "^2.0.3",
     "simple-flexbox": "^1.2.0"
   },
   "devDependencies": {

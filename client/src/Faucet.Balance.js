@@ -1,7 +1,17 @@
 import React from 'react';
 import { Row } from 'simple-flexbox';
+import ReactLoading from 'react-loading';
 
 const Balance = (props) => {
+  if (props.address === "") {
+    // loading
+    return (
+      <Row horizontal='center'>
+        <ReactLoading type='bars' />
+      </Row>
+    );
+  }
+
   if (!props.hasEnoughFund) {
     return (
       <Row style={{width: 800, maxWidth:800, display:'inline-block', wordBreak: 'break-word', textAlign:'left'}}>
