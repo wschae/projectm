@@ -14,7 +14,8 @@ app.get('/api/people', (req, res) => {
         {name: 'wschae', url: 'assets/wschae.jpg', nonce: '354861675'},
         {name: 'kyungchan', url: 'assets/kyungchan.jpg', nonce: '359310174'},
         {name: 'swkim', url: 'assets/swkim.jpg', nonce: '244859547'},
-        {name: 'jskim', url: 'assets/jskim.jpg', nonce: '41698321'}
+        {name: 'jskim', url: 'assets/jskim.jpg', nonce: '41698321'},
+	{name: 'cyoh', url: 'assets/cyoh.jpg', nonce: '151578779'}
     ];
 
   res.json(people);
