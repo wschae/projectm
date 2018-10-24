@@ -15,7 +15,10 @@
   },
   "dependencies": {
     "express": "^4.16.2",
-    "projectm-client": "file:client"
+    "projectm-client": "file:client",
+    "react-loading": "^2.0.3",
+    "simple-flexbox": "^1.2.0",
+    "web3": "^1.0.0-beta.35"
   },
   "devDependencies": {
     "bitcoinjs-lib": "^4.0.1",
