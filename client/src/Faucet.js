@@ -56,12 +56,17 @@ class Faucet extends Component {
 
         this.setState({message:'Waiting on transaction success...'});
 
-        await this.state.contract.withdraw(50000, {
+        await this.state.contract.withdraw(this.state.web3.utils.toWei(this.state.reward, 'ether'), {
             from: this.state.accounts[0],
             gas:50000,
         });
 
         this.setState({message:'Transaction done!'});
+
+        var balance = await this.state.web3.eth.getBalance(this.state.address);
+        var account_balance = await this.state.web3.eth.getBalance(this.state.accounts[0]);        
+        this.setState({balance:this.state.web3.utils.fromWei(balance,'ether'), 
+                       account_balance:this.state.web3.utils.fromWei(account_balance,'ether')});
     }
 
     render() {
@@ -109,7 +114,7 @@ class Faucet extends Component {
                 error &&
                 <Error message={this.state.result.error} />
               } */}
-                {this.state.message}
+                <font style={{color:"white"}}>{this.state.message}</font>
             </div>
         </div>
       );
